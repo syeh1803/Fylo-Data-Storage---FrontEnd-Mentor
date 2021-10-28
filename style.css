@@ -1,0 +1,326 @@
+reset css html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Additions Below */
+:root,
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* mobile */
+
+body {
+  background-image: url(/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: hsl(228, 56%, 26%);
+  width: 88%;
+  border-radius: 1rem;
+}
+
+.card-fylo {
+  padding: 3.5rem;
+  border-top-right-radius: 10rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-storage {
+  padding: 3.5rem;
+}
+
+.text {
+  color: hsl(229, 7%, 55%);
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.text strong {
+  color: hsl(243, 100%, 93%);
+}
+
+.outer-oval,
+.inner-oval {
+  border-radius: 2rem;
+}
+
+.outer-oval {
+  background-color: hsl(229, 57%, 11%);
+  width: 98%;
+  height: 1.8rem;
+  margin: 1.5rem 0 1.2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.inner-oval {
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  width: 75%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.circle {
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 0.11rem;
+}
+
+.GB {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.remaining-GB-wrapper {
+  position: absolute;
+  left: 25%;
+  bottom: 18%;
+}
+
+.remaining-GB {
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 17.8rem;
+  height: 7.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remaining-GB strong.number {
+  font-size: 3.8rem;
+}
+
+.remaining-GB strong.GB-left {
+  color: hsl(229, 7%, 55%);
+  font-size: 1.2rem;
+  letter-spacing: 0.12rem;
+  margin-left: 1.2rem;
+  opacity: 0.85;
+}
+
+.triangle {
+    display: none;
+}
+
+/* media query */
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(/images/bg-desktop.png);
+    background-position-y: 48rem;
+    background-size: contain;
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .card-fylo {
+    width: 23%;
+  }
+
+  .card-storage {
+    width: 35%;
+    transform: translateY(14%);
+    position: relative;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .remaining-GB-wrapper {
+    position: absolute;
+    left: 57%;
+    bottom: 80%;
+    transform: translateY(12%);
+  }
+
+  .remaining-GB {
+      border-bottom-right-radius: 0;
+  }
+
+  .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 2rem solid #fff; 
+    border-left: 2rem solid transparent; 
+    transform: translate(15.8rem, -0.1rem);
+  }
+}

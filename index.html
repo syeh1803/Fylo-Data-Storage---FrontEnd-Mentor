@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card card-fylo">
+            <div class="fylo-logo">
+                <img src="/images/logo.svg" alt="logo">
+            </div>
+            <div class="icons">
+                <div class="icon"><img src="/images/icon-document.svg" alt="document"></div>
+                <div class="icon"><img src="/images/icon-folder.svg" alt="folder"></div>
+                <div class="icon"><img src="/images/icon-upload.svg" alt="upload"></div>
+            </div>
+        </div>
+
+        <div class="card card-storage">
+            <div class="text">
+                You've used <strong>815GB</strong> of your storage
+            </div>
+                <div class="outer-oval">
+                    <div class="inner-oval">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            <div class="GB">
+                <div class="zero-GB">
+                    0 GB
+                </div>
+                <div class="thousand-GB">
+                    1000 GB
+                </div>
+            </div>
+            <div class="remaining-GB-wrapper">
+                <div class="remaining-GB">
+                    <strong class="number">185</strong>
+                    <strong class="GB-left">GB LEFT</strong>
+                </div>
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
